@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from './components/Card'
 import Chart from './components/Chart.js'
+import News from './components/News.js'
 import Slider from "react-slick";
 import './App.css';
 
@@ -83,7 +84,7 @@ function App() {
 
         <div className="container" style={{marginTop:'5px'}}>
         <div className="clearfix">
-          <div className="float-left">
+          <div className="float-left" style={{marginLeft:'-190px'}}>
             <h1>Stonktron</h1>
           </div>
           <div className="float-right">
@@ -131,6 +132,9 @@ function App() {
         }
         <div className="row">
           <div className="column"><Chart/></div>
+        </div>
+        <div className="row">
+          <div className="column"><News/></div>
         </div>
         </div>
       </header>

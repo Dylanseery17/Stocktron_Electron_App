@@ -14,7 +14,7 @@ const Card = (props) => {
     
     const { data } = useSwr(`https://finnhub.io/api/v1/quote?symbol=${props.stock.ticker}&token=brh2thvrh5r9t6gjh5og`, { fetcher, refreshInterval: 5 });
     return (
-        <div className="container" style={{border: '1px solid #b2bec3', padding: '10px'}}>
+        <div className="container" style={{border: '1px solid #dfe6e9', padding: '10px'}}>
         <div className="row">
             <div className="column" style={{textAlign: 'center'}}>
                 <h3 style={{maxHeight: '35px' , overflow: 'hidden'}}><img src={props.stock.logo} style={{maxWidth: '30px' , float: 'left', marginTop: '5px'}}></img>{props.stock.name}</h3><br/>
